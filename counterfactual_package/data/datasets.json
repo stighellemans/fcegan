@@ -1,0 +1,225 @@
+{
+    "adult": {
+        "source_type": "kaggle",
+        "source": "uciml/adult-census-income",
+        "final_merge": {"adult.csv": ["adult.csv"]},
+        "merge_files": ["adult.csv"],
+        "file_name": "adult.csv",
+        "column_names": {
+            "age": "Age",
+            "workclass": "Workclass",
+            "fnlwgt": "fnlwgt",
+            "education": "Education",
+            "education.num": "Education-Num",
+            "marital.status": "Martial Status",
+            "occupation": "Occupation",
+            "relationship": "Relationship",
+            "race": "Race",
+            "sex": "Sex",
+            "capital.gain": "Capital Gain",
+            "capital.loss": "Capital Loss",
+            "hours.per.week": "Hours per week",
+            "native.country": "Country",
+            "income": "Target"
+        },
+        "category_mappings": null,
+        "read_csv_args": {
+            "na_values": "?"
+        }
+    },
+    "heart_disease": {
+        "source_type": "kaggle",
+        "source": "alphiree/cardiovascular-diseases-risk-prediction-dataset",
+        "merge_files": ["CVD_cleaned.csv"],
+        "file_name": "heart_disease.csv",
+        "column_names": {
+            "General_Health": "General_Health", 
+            "Checkup": "Checkup", 
+            "Exercise": "Exercise", 
+            "Heart_Disease": "Heart_Disease", 
+            "Skin_Cancer": "Skin_Cancer",
+            "Other_Cancer": "Other_Cancer", 
+            "Depression": "Depression", 
+            "Diabetes": "Diabetes", 
+            "Arthritis": "Arthritis", 
+            "Sex": "Sex",
+            "Age_Category": "Age_Category", 
+            "Height_(cm)": "Height_(cm)", 
+            "Weight_(kg)": "Weight_(kg)", 
+            "BMI": "BMI", 
+            "Smoking_History": "Smoking_History",
+            "Alcohol_Consumption": "Alcohol_Consumption", 
+            "Fruit_Consumption": "Fruit_Consumption",
+            "Green_Vegetables_Consumption": "Green_Vegetables_Consumption", 
+            "FriedPotato_Consumption": "FriedPotato_Consumption"
+        },
+        "category_mappings": null,
+        "read_csv_args": {}
+    },
+    "diabetes": {
+        "source_type": "kaggle",
+        "source": "alexteboul/diabetes-health-indicators-dataset",
+        "merge_files": ["diabetes_012_health_indicators_BRFSS2015.csv"],
+        "file_name": "diabetes.csv",
+        "column_names": {
+            "Diabetes_012": "Diabetes",
+            "HighBP": "High_Blood_Pressure",
+            "HighChol": "High_Cholesterol",
+            "CholCheck": "Cholesterol_Check",
+            "BMI": "Body_Mass_Index",
+            "Smoker": "Smoker",
+            "Stroke": "Stroke",
+            "HeartDiseaseorAttack": "Heart_Disease_or_Attack",
+            "PhysActivity": "Physical_Activity",
+            "Fruits": "Fruits",
+            "Veggies": "Vegetables",
+            "HvyAlcoholConsump": "Heavy_Alcohol_Consumption",
+            "AnyHealthcare": "Any_Healthcare",
+            "NoDocbcCost": "No_Doctor_Because_of_Cost",
+            "GenHlth": "General_Health",
+            "MentHlth": "Mental_Health",
+            "PhysHlth": "Physical_Health",
+            "DiffWalk": "Difficulty_Walking",
+            "Sex": "Sex",
+            "Age": "Age",
+            "Education": "Education",
+            "Income": "Income"
+        },
+        "category_mappings": {
+            "Diabetes": {
+            "0": "No diabetes",
+            "1": "Prediabetes",
+            "2": "Diabetes"
+            },
+            "High_Blood_Pressure": {
+            "0": "No high BP",
+            "1": "High BP"
+            },
+            "High_Cholesterol": {
+            "0": "No high chol",
+            "1": "High chol"
+            },
+            "Cholesterol_Check": {
+            "0": "No chol check",
+            "1": "Chol check"
+            },
+            "Smoker": {
+            "0": "No",
+            "1": "Yes"
+            },
+            "Stroke": {
+            "0": "No",
+            "1": "Yes"
+            },
+            "Heart_Disease_or_Attack": {
+            "0": "No",
+            "1": "Yes"
+            },
+            "Physical_Activity": {
+            "0": "No",
+            "1": "Yes"
+            },
+            "Fruits": {
+            "0": "No",
+            "1": "Yes"
+            },
+            "Vegetables": {
+            "0": "No",
+            "1": "Yes"
+            },
+            "Heavy_Alcohol_Consumption": {
+            "0": "No",
+            "1": "Yes"
+            },
+            "Any_Healthcare": {
+            "0": "No",
+            "1": "Yes"
+            },
+            "No_Doctor_Because_of_Cost": {
+            "0": "No",
+            "1": "Yes"
+            },
+            "General_Health": {
+            "1": "Excellent",
+            "2": "Very good",
+            "3": "Good",
+            "4": "Fair",
+            "5": "Poor"
+            },
+            "Sex": {
+            "0": "Female",
+            "1": "Male"
+            },
+            "Age": {
+            "1": "18-24",
+            "2": "25-29",
+            "3": "30-34",
+            "4": "35-39",
+            "5": "40-44",
+            "6": "45-49",
+            "7": "50-54",
+            "8": "55-59",
+            "9": "60-64",
+            "10": "65-69",
+            "11": "70-74",
+            "12": "75-79",
+            "13": "80+"
+            },
+            "Education": {
+            "1": "No school",
+            "2": "Elementary",
+            "3": "Some high school",
+            "4": "High school",
+            "5": "Some college",
+            "6": "College grad"
+            },
+            "Income": {
+            "1": "<$10k",
+            "2": "<$15k",
+            "3": "<$20k",
+            "4": "<$25k",
+            "5": "<$35k",
+            "6": "<$50k",
+            "7": "<$75k",
+            "8": "$75k+"
+            }
+        },
+        
+        "read_csv_args": {}
+    },
+    "employees": {
+        "source_type": "kaggle",
+        "source": "stealthtechnologies/employee-attrition-dataset",
+        "merge_files": ["train.csv", "test.csv"],
+        "file_name": "employees.csv",
+        "column_names": {
+            "Employee ID": "Employee_ID",
+            "Age": "Age",
+            "Gender": "Gender",
+            "Years at Company": "Years_at_Company",
+            "Job Role": "Job_Role",
+            "Monthly Income": "Monthly_Income",
+            "Work-Life Balance": "Work_Life_Balance",
+            "Job Satisfaction": "Job_Satisfaction",
+            "Performance Rating": "Performance_Rating",
+            "Number of Promotions": "Number_of_Promotions",
+            "Overtime": "Overtime",
+            "Distance from Home": "Distance_from_Home",
+            "Education Level": "Education_Level",
+            "Marital Status": "Marital_Status",
+            "Number of Dependents": "Number_of_Dependents",
+            "Job Level": "Job_Level",
+            "Company Size": "Company_Size",
+            "Company Tenure": "Company_Tenure",
+            "Remote Work": "Remote_Work",
+            "Leadership Opportunities": "Leadership_Opportunities",
+            "Innovation Opportunities": "Innovation_Opportunities",
+            "Company Reputation": "Company_Reputation",
+            "Employee Recognition": "Employee_Recognition",
+            "Attrition": "Attrition"
+        },
+        "category_mappings": null,
+        "read_csv_args": {}
+    }
+}
+
